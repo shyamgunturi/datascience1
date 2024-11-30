@@ -11,7 +11,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # Get the API key from the environment variable
-API_KEY = os.getenv("a4a17aabcc7f4c559f07be45d8704695")
+API_KEY = os.getenv("API_KEY")
 if not API_KEY:
     raise ValueError("API_KEY environment variable is not set")
 
