@@ -6,12 +6,14 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 
-# Configure NLTK data directory (optional but helps on Render)
+# Configure NLTK data directory
 nltk.data.path.append("/tmp/nltk_data")
 
-# Download necessary NLTK data
+# Download all necessary NLTK resources
 nltk.download("punkt", download_dir="/tmp/nltk_data")
 nltk.download("stopwords", download_dir="/tmp/nltk_data")
+nltk.download("punkt_tab", download_dir="/tmp/nltk_data")  # Add this line
+nltk.download("averaged_perceptron_tagger", download_dir="/tmp/nltk_data")  # Optional, for tagging
 
 # Get the API key from environment variables
 API_KEY = os.getenv("API_KEY")
